@@ -1,0 +1,44 @@
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    color: #010620;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.forgot-password {
+    position: relative;
+    left: 180px;
+    bottom: 25px;
+    
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+
+    color: #000000;
+
+    margin-bottom: 100px;
+}
+
+.new-user {
+    font-size: 18px;
+    color: #ADA9BB;
+    margin-top: 40px;
+}
+
+.register {
+    text-decoration: none;
+    font-size: 18px;
+    color: #5784BA;
+}

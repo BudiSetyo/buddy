@@ -1,0 +1,45 @@
+.input-label {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 480px;
+    max-height: 140px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.input-title {
+    margin-top: 0;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+
+    font-size: 20px;
+    color: #ADA9BB;
+}
+
+.input-icon {
+    position: relative;
+    left: 90%;
+    bottom: 40px;
+    
+    font-size: 1.5rem;
+}
+
+.input-form {
+    max-width: 480px;
+    max-height: 61px;
+    width:100%;
+    height: 61px;
+    padding: 5px 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #ADA9BB;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #010620;
+}
