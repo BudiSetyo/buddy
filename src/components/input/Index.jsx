@@ -10,13 +10,13 @@ const eyeSlash = <FontAwesomeIcon icon={faEyeSlash} />;
 function Input({ type, title }) {
 
     const [visible, setVisible] = useState(false);
-
+    
     return (
         <>
             <label className="input-label">
                 <p className="input-title">{title}</p>
 
-                <input className={`input-form input--${type}`} type={type.toLowerCase() !== 'password' ? type : visible ? 'text' : 'password'} placeholder={title} />
+                <input className={`input-form input--${type}`} type={type.toLowerCase() !== 'password' ? type : visible ? 'text' : 'password'} placeholder={title} onChange={(e) => e.target.value} />
 
                 {type.toLowerCase() === 'password' && (
                     <i

@@ -1,11 +1,11 @@
-import Login from './pages/login/Index.jsx';
+import Register from './pages/register/Index';
 
 import './App.css';
 
 function App() {
   return (
     <>
-      <Login />
+      <Register />
     </>
   );
 }
