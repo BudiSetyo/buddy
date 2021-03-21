@@ -9,6 +9,7 @@
     margin-bottom: 0.5rem;
 }
 
+
 .input-title {
     margin-top: 0;
     margin-bottom: 1vh;
@@ -22,6 +23,9 @@
     position: relative;
     left: 90%;
     bottom: 40px;
+
+    display: block;
+    width: fit-content;
     
     font-size: 1.5rem;
 }
@@ -42,6 +46,12 @@
     font-size: 24px;
     line-height: 28px;
     color: #010620;
+}
+
+@media screen and (max-width: 768px) {
+    .input-label {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 425px) {

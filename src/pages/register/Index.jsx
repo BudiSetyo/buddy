@@ -3,7 +3,6 @@ import Input from '../../components/input/Index';
 import Button from '../../components/button/Index';
 import {
     BrowserRouter as Router,
-    Route,
     Link,
 } from 'react-router-dom';
 

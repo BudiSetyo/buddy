@@ -26,6 +26,12 @@
     color: #010620;
 }
 
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 95%;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .btn {
         width: 95%;

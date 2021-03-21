@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
+
+.container-reset {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    background-color: #E6EDF6;
+    font-family: 'Kanit', sans-serif ;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon {
+    max-width: 462px;
+    width: 80%;
+}
+
+.right-side {
+    width: 50%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+.reset-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 91px;
+}
+
+.par-1 {
+    margin-bottom: 4vh;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.otp {
+    max-width: 400px;
+    max-height: 67px;
+    width: 80%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.otp-input {
+    display: block;
+
+    max-height: 80px;
+    max-width: 67px;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    font-size: 53px;
+    font-weight: 500;
+
+    border: none;
+    border-bottom: 3px solid #010620;
+}
+
+.resend {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ADA9BB;
+}
+
+.resend-link {
+    text-decoration: none;
+    color: #5784BA;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .container-reset {
+        flex-direction: column;
+        background-color: #FFF;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        height: 100%;
+    }
+
+    .reset-title {
+        font-size: 30px;
+    }
+    
+    .par-1 {
+        font-size: 20px;
+    }
+    
+    .par-2 {
+        font-size: 16px;
+    }
+}
