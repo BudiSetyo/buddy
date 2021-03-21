@@ -15,8 +15,7 @@ import './Style.css';
 
 const Index = () => {
     return (
-        <Router>
-            <div className="container-reset">
+        <div className="container-reset">
                 <div className="left-side">
                     <img className="logo-icon" src={Logo} />
                 </div>
@@ -29,7 +28,7 @@ const Index = () => {
 
                         <img className="success-icon" src={Success} alt="succes-icon"/>
 
-                        <Link className="login-link">
+                        <Link to="/" className="login-link">
                             Login to your account
                         </Link>
                     </div>
@@ -50,7 +49,6 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-        </Router>
     )
 }
 

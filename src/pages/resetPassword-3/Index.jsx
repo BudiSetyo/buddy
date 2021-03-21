@@ -7,19 +7,15 @@ import {
     Link,
 } from 'react-router-dom';
 
-import Logo from '../../assets/logo-icon.png';
+import Logo from '../../assets/logo-icon-2.png';
 import Back from '../../assets/back-icon.png';
 
 import './Style.css';
 
 const Index = () => {
     return (
-        <Router>
-            <div className="container-reset">
+        <div className="container-reset">
                 <div className="left-side">
-                    <Link to="">
-                        <img className="back-icon" src={Back} />
-                    </Link>
                     <img className="logo-icon" src={Logo} />
                 </div>
 
@@ -35,13 +31,14 @@ const Index = () => {
                     </div>
 
                     <div className="buttons">
-                        <Button type="btn--primary">
-                            Create
-                        </Button>
+                        <Link className="next-link" to="/resetPassword4">
+                            <Button type="btn--primary">
+                                Create
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
-        </Router>
     )
 }
 

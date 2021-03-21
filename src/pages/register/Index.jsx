@@ -12,7 +12,6 @@ import './Style.css'
 
 const Index = () => {
     return (
-        <Router>
             <div className="container-login">
                 <h1 className="login-title">Register</h1>
 
@@ -31,12 +30,11 @@ const Index = () => {
 
                 <p className="new-user">
                     Already have acount? 
-                    <Link className="register">
+                    <Link to="/" className="register">
                         Login
                     </Link>
                 </p>
             </div>
-        </Router>
     )
 }
 

@@ -14,7 +14,6 @@ import './Style.css';
 
 const Index = () => {
     return (
-        <Router>
             <div className="container-reset">
                 <div className="left-side">
                     <Link to="">
@@ -32,13 +31,14 @@ const Index = () => {
 
                     <div className="buttons">
                         <Input type="email" title="Email" />
-                        <Button type="btn--primary">
-                            Send
-                        </Button>
+                        <Link className="next-link" to="/resetPassword2">
+                            <Button type="btn--primary">
+                                Send
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
-        </Router>
     )
 }
 

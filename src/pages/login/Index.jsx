@@ -12,14 +12,13 @@ import './Style.css'
 
 const Index = () => {
     return (
-        <Router>
             <div className="container-login">
                 <h1 className="login-title">Login</h1>
 
                 <Input type="email" title="Username or Email" />
                 <Input type="password" title="Password" />
 
-                <Link className="forgot-password">
+                <Link to="/resetPassword" className="forgot-password">
                     Forgot Password
                 </Link>
 
@@ -33,12 +32,11 @@ const Index = () => {
 
                 <p className="new-user">
                     New User? 
-                    <Link className="register">
+                    <Link to="/register" className="register">
                         Register
                     </Link>
                     </p>
             </div>
-        </Router>
         
     )
 }
