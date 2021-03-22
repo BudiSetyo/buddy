@@ -4,12 +4,12 @@ import ResetPass from './pages/resetPassword/Index';
 import ResetPass2 from './pages/resetPassword-2/Index';
 import ResetPass3 from './pages/resetPassword-3/Index';
 import ResetPass4 from './pages/resetPassword-4/Index';
+import Profile from './pages/profile/Index';
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import './App.css';
@@ -41,6 +41,10 @@ function App() {
 
         <Route path="/resetPassword4">
           <ResetPass4 />
+        </Route>
+
+        <Route path="/profile">
+          <Profile />
         </Route>
 
       </Switch>

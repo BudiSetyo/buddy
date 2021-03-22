@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
+
+.menu-profile {
+    background: rgba(226, 224, 224, 0.877);
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: #E6EDF6;
+
+    font-family: 'Kanit', sans-serif;
+}
+
+.content {
+    width: 70%;
+    height: 95%;
+    margin-right: 2vw;
+    margin-top: 2vh;
+
+    border-radius: 20px;
+    background-color: #FFF;
+}
+
+.profile-view {
+    height: 37%;
+    background-image: url(../../assets/profile/background-profile.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 3vh;
+}
+
+.shadow {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(0deg, #000000 -94.8%, rgba(0, 0, 0, 0) 122%);
+    border-radius: 20px 20px 0 0;
+}
+
+.user-icon {
+    max-width: 180px;
+    max-height: 180px;
+    width: 30%;
+    height: fit-content;
+}
+
+.edit-icon {
+    position: relative;
+    left: 12%;
+    margin-bottom: 2vh;
+
+    max-height: 24px;
+    height: 10%;
+}
+
+.shadow h2 {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.option-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-title {
+    width: 90%;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 3vh;
+}
+
+.option-menu {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 8vh;
+
+    border-bottom: 1px solid #E6EDF6;
+}
+
+.storage-menu {
+    border: none;
+}
+
+.menu-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-value p {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .container-profile {
+        align-items: center;
+    }
+
+    .content {
+        width: 90%;
+        margin-top: 10vh;
+    }
+}

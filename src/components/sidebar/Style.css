@@ -1,0 +1,86 @@
+.sidebar {
+    position: fixed;
+    background-color: #5784BA;
+    /* max-width: 230px; */
+    width: 20%;
+    height: 95%;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    margin-top: 2vh;
+    margin-left: 2vw;
+
+    left: 0;
+}
+
+.menu-profile {
+    height: 30%;
+    border-radius: 20px;
+}
+
+.menu-profile:hover {
+    background-color: rgba(226, 224, 224, 0.877);
+    border-radius: 18px;
+}
+
+.menu-profile .notification {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 20px 0 0;
+}
+
+.menu-profile .desc {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2vw;
+}
+
+.menu-profile .desc img {
+    width: 4rem;
+}
+
+.menu-profile .desc h5, .menu-profile .desc p {
+    font-size: 1.25rem;
+    color: #FFF;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu-profile .desc p {
+    font-size: 0.8rem;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-left: 2vw;
+    margin: 1vh 0 1vh 0;
+}
+
+.menu-nav:hover {
+    background-color: rgba(226, 224, 224, 0.877);
+    border-radius: 20px;
+}
+
+.menu-nav img {
+    height: 2rem;
+    margin-right: 2vw;
+}
+
+.menu-nav p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.menu-nav .logout {
+    color: #FF1313;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
