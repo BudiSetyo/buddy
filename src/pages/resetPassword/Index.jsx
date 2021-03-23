@@ -3,7 +3,6 @@ import Input from '../../components/input/Index';
 import Button from '../../components/button/Index';
 
 import {
-    BrowserRouter as Router,
     Link,
 } from 'react-router-dom';
 
@@ -17,9 +16,9 @@ const Index = () => {
             <div className="container-reset">
                 <div className="left-side">
                     <Link to="">
-                        <img className="back-icon" src={Back} />
+                        <img className="back-icon" src={Back} alt="back-icon" />
                     </Link>
-                    <img className="logo-icon" src={Logo} />
+                    <img className="logo-icon" src={Logo} alt="logo-icon" />
                 </div>
 
                 <div className="right-side">

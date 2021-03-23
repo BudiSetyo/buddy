@@ -2,7 +2,6 @@ import React from 'react'
 import Input from '../../components/input/Index';
 import Button from '../../components/button/Index';
 import {
-    BrowserRouter as Router,
     Link,
 } from 'react-router-dom';
 
@@ -24,7 +23,7 @@ const Index = () => {
                     Register
                 </Button>
                 <Button type="btn--secondary" >
-                    <img src={Icon} style={{ marginRight: "1vw" }} />
+                    <img src={Icon} style={{ marginRight: "1vw" }} alt="google-icon" />
                     Register with Google
                 </Button>
 

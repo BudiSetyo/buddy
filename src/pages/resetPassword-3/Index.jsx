@@ -3,12 +3,10 @@ import Input from '../../components/input/Index';
 import Button from '../../components/button/Index';
 
 import {
-    BrowserRouter as Router,
     Link,
 } from 'react-router-dom';
 
 import Logo from '../../assets/logo-icon-2.png';
-import Back from '../../assets/back-icon.png';
 
 import './Style.css';
 
@@ -16,7 +14,7 @@ const Index = () => {
     return (
         <div className="container-reset">
                 <div className="left-side">
-                    <img className="logo-icon" src={Logo} />
+                    <img className="logo-icon" src={Logo} alt="logo-icon" />
                 </div>
 
                 <div className="right-side">
