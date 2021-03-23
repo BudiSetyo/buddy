@@ -9,7 +9,7 @@ export class Index extends Component {
     render() {
         return (
             <>
-                <nav className="navbar">
+                <nav className="navbar-item">
                     <img className="burger-icon" src={Burger} alt="borger-icon"/>
                     <img className="chat-icon" src={Chat} alt="chat-icon"/>
                 </nav>

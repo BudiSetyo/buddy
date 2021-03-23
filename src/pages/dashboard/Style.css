@@ -1,9 +1,228 @@
-.main-page {
+.container-dashboard {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 40%;
-    
-    background-color: black;
+    background: #E6EDF6;
+    height: 100%;
+
+    height: fit-content;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 45%;
+    margin-top: 2vh;
+}
+
+.top-content {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #FFF;
+}
+
+.d-block {
+    border-radius: 0 0 20px 20px;
+}
+
+.top-title {
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.bot-content {
+    width: 100%;
+    margin-top: 2vh;
+    background: #FFF;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* calender */
+
+main .bot-content .calender {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .bot-content .calender .today {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+main .bot-content .calender .today h2 {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+main .bot-content .calender .today img {
+    height: 3vh;
+}
+
+main .bot-content .calender .calender-table {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 1.5vh;
+}
+
+main .bot-content .calender .calender-table .calender-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .bot-content .calender .calender-table .calender-number p {
+    margin-bottom: 0;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+main .bot-content .calender .calender-table .calender-number .day {
+    color: #989898;
+}
+
+main .bot-content .calender .calender-table .current-day {
+    background-color: #5784BA;
+    border-radius: 15px;
+    width: 2vw;
+}
+
+main .bot-content .calender .calender-table .current-day .day, main .bot-content .calender .calender-table .current-day p {
+    color: #FFF;
+}
+
+/* schedule */
+
+main .bot-content .schedule {
+    width: 85%;
+    margin-top: 2vh;
+}
+
+main .bot-content  .schedule .schedule-title {
+    text-align: center;
+}
+
+main .bot-content  .schedule .schedule-title p {
+    margin-bottom: 0;
+    font-size: 2vh;
+    font-weight: 500;
+    color: #5784BA;
+}
+
+main .bot-content  .schedule .schedule-title p a {
+    text-decoration: none;
+    color: #ADA9BB;
+}
+
+main .bot-content  .time {
+    border-top: 1px solid black;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+main .bot-content  .time p {
+    position: relative;
+    bottom: 1.7vh;
+    display: inline-block;
+    width: 5vw;
+    margin-bottom: 0;
+    font-size: 2vh;
+    background-color: #FFF;
+}
+
+main .bot-content  .class {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .bot-content  .class p {
+    margin-bottom: 0;
+}
+
+main .bot-content  .class .class-1 {
+    width: 60%;
+    height: 18vh;
+    padding: 1vh 1vw 0 1vw;
+    background-color: #E6EDF6;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+main .bot-content .class .bg-1 {
+    background-image: url(../../assets/dashboard/background-bank.png);
+}
+
+main .bot-content .class .bg-2 {
+    background-image: url(../../assets/dashboard/background-history.png);
+}
+
+main .bot-content .class .bg-3 {
+    background-image: url(../../assets/dashboard/background-coding.png);
+}
+
+main .bot-content  .class .class-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .bot-content  .class .class-title p {
+    display: inline-block;
+    width: 10vw;
+    height: 8vh;
+    font-size: 2vh;
+    margin-bottom: 5vh;
+}
+
+main .bot-content  .class .class-title img {
+    height: 0.7vh;
+    position: relative;
+    top: 1vh;
+}
+
+main .bot-content  .class .class-2 {
+    width: 30%;
+    height: 18vh;
+    padding: 1vh 0 0 1vw;
+    background-color: #E6EDF6;
+    border-right: 4px solid #dad6d6;
+    border-radius: 10px 0 0 10px;
+}
+
+main .bot-content  .class .empty-class {
+    background-color: #FFF;
+}
+
+main .bot-content  .class .class-2 .class-title {
+    overflow: hidden;
+}
+
+main .bot-content  .class .duration p {
+    font-size: 1.3vh;
+}
+
+main .bot-content  .time p {
+    font-size: 1.5vh;
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-content {
+        width: 90%;
+
+        margin-top: 8vh;
+    }
 }

@@ -5,6 +5,9 @@ import ResetPass2 from './pages/resetPassword-2/Index';
 import ResetPass3 from './pages/resetPassword-3/Index';
 import ResetPass4 from './pages/resetPassword-4/Index';
 import Profile from './pages/profile/Index';
+import Dashboard from './pages/dashboard/Index';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   BrowserRouter as Router,
@@ -45,6 +48,10 @@ function App() {
 
         <Route path="/profile">
           <Profile />
+        </Route>
+
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
 
       </Switch>

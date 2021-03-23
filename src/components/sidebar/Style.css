@@ -45,6 +45,7 @@
     font-size: 1.25rem;
     color: #FFF;
     font-family: 'Kanit', sans-serif;
+    margin-bottom: 0;
 }
 
 .menu-profile .desc p {
@@ -73,6 +74,7 @@
     font-family: 'Kanit', sans-serif;
     font-size: 1.25rem;
     color: white;
+    margin-bottom: 0;
 }
 
 .menu-nav .logout {
