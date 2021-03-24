@@ -7,11 +7,9 @@ import ResetPass4 from './pages/resetPassword-4/Index';
 import Profile from './pages/profile/Index';
 import Dashboard from './pages/dashboard/Index';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   BrowserRouter as Router,
-  Switch,
   Route
 } from "react-router-dom";
 
@@ -20,7 +18,6 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Switch>
 
         <Route exact path="/">
           <Login />
@@ -54,7 +51,6 @@ function App() {
           <Dashboard />
         </Route>
 
-      </Switch>
     </Router>
   );
 }

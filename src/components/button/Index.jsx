@@ -4,7 +4,7 @@ function Button({type, children}) {
 
     return (
         <>
-            <button className={`btn-no ${type}`}>
+            <button className={`btn ${type}`}>
                 {children}
             </button>
         </>

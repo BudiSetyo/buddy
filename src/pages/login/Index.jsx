@@ -14,7 +14,7 @@ const Index = () => {
             <div className="container-login">
                 <h1 className="login-title">Login</h1>
 
-                <div>
+                <div className="form-input">
                     <Input type="email" title="Username or Email" />
                     <Input type="password" title="Password" />
                     <Link to="/resetPassword" className="forgot-password">
@@ -22,9 +22,7 @@ const Index = () => {
                     </Link>
                 </div>
 
-                
-
-                <div>
+                <div className="block-button">
                     <Button type="btn--primary" >
                         Login
                     </Button>
@@ -39,7 +37,7 @@ const Index = () => {
                     <Link to="/register" className="register">
                         Register
                     </Link>
-                    </p>
+                </p>
             </div>
         
     )

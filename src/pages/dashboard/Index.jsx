@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Sidebar from '../../components/sidebar/Index.jsx';
-import Navbar from '../../components/navbar/Index'
-import { Carousel } from 'react-bootstrap';
+import Navbar from '../../components/navbar/Index';
 
-import BgCarousel from '../../assets/dashboard/background-carousel.jpg';
+// import BgCarousel from '../../assets/dashboard/background-carousel.jpg';
 import CalIcon from '../../assets/dashboard/calender-icon.png';
 import ListIcon from '../../assets/dashboard/list-icon.png';
 
@@ -21,41 +20,6 @@ export class Index extends Component {
                         <h2 className="top-title">
                             News
                         </h2>
-
-                        <Carousel>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={BgCarousel}
-                                    alt="First slide"
-                                />
-                                <Carousel.Caption>
-                                    <p>New update for front end development class sylabus!</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={BgCarousel}
-                                    alt="Second slide"
-                                />
-
-                                <Carousel.Caption>
-                                    <p>New update for front end development class sylabus!</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={BgCarousel}
-                                    alt="Third slide"
-                                />
-
-                                <Carousel.Caption>
-                                    <p>New update for front end development class sylabus!</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
                     </div>
 
                     <div className="bot-content">

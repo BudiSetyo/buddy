@@ -13,16 +13,25 @@
     font-family: 'Kanit', sans-serif;
     
     background: #E6EDF6;
+    background-image: url();
 }
 
 .login-title {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 48px;
     line-height: 72px;
     color: #010620;
 
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.form-input, .block-button {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .forgot-password {
