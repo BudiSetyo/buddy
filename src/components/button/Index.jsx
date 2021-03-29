@@ -1,10 +1,10 @@
 import './Style.css';
 
-function Button({type, children}) {
+function Button({type, handleCick, children}) {
 
     return (
         <>
-            <button className={`btn ${type}`}>
+            <button className={`btn ${type}`} onClick={handleCick}>
                 {children}
             </button>
         </>

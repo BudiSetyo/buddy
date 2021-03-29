@@ -7,7 +7,7 @@ import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 const eye = <FontAwesomeIcon icon={faEye} />;
 const eyeSlash = <FontAwesomeIcon icon={faEyeSlash} />;
 
-function Input({ type, title }) {
+function Input({ type, title, handleChange }) {
 
     const [visible, setVisible] = useState(false);
     
@@ -16,7 +16,7 @@ function Input({ type, title }) {
             <label className="input-label">
                 <p className="input-title">{title}</p>
 
-                <input className={`input-form input--${type}`} type={type.toLowerCase() !== 'password' ? type : visible ? 'text' : 'password'} placeholder={title} onChange={(e) => e.target.value} />
+                <input className={`input-form input--${type}`} type={type.toLowerCase() !== 'password' ? type : visible ? 'text' : 'password'} placeholder={title} onChange={handleChange} />
 
                 {type.toLowerCase() === 'password' && (
                     <i

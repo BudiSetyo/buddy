@@ -1,24 +1,26 @@
 .navbar-item {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
 
-    position: fixed;
-    top: 0;
-    z-index: 99;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 
-    width: 100%;
-    height: 7%;
-    background: #5784BA;
+  width: 100%;
+  height: 7%;
+  background: #5784ba;
 }
 
-.burger-icon, .chat-icon {
-    margin-left: 1vw;
-    margin-right: 1vw;
+.burger-icon,
+.chat-icon {
+  height: 5vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-item {
-        display: flex;
-    }
+  .navbar-item {
+    display: flex;
+  }
 }

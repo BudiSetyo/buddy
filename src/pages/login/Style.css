@@ -3,80 +3,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,500&display=swap');
 
 .container-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
-    height: 100%;
+  height: 100%;
 
-    font-family: 'Kanit', sans-serif;
-    
-    background: #E6EDF6;
-    background-image: url();
+  font-family: 'Kanit', sans-serif;
+
+  background: #e6edf6;
+  /* background-image: url(); */
 }
 
 .login-title {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 72px;
-    color: #010620;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  color: #010620;
 
-    margin-top: 40px;
-    margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.form-input, .block-button {
-    width: 100%;
+.form-input,
+.block-button {
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .forgot-password {
-    position: relative;
-    left: 180px;
-    bottom: 25px;
-    
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 16px;
+  position: relative;
+  left: 180px;
+  bottom: 25px;
 
-    color: #000000;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
 
-    margin-bottom: 100px;
+  color: #000000;
+
+  margin-bottom: 100px;
 }
 
 .new-user {
-    font-size: 18px;
-    color: #ADA9BB;
-    margin-top: 60px;
-    margin-bottom: 40px;
+  font-size: 18px;
+  color: #ada9bb;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .register {
-    text-decoration: none;
-    font-size: 18px;
-    color: #5784BA;
+  text-decoration: none;
+  font-size: 18px;
+  color: #5784ba;
 }
 
 @media screen and (max-width: 425px) {
-    .forgot-password {
-        left: 130px;
-    }
+  .forgot-password {
+    left: 130px;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    .forgot-password {
-        left: 110px;
-    }
+  .forgot-password {
+    left: 110px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .forgot-password {
-        left: 80px;
-    }
+  .forgot-password {
+    left: 80px;
+  }
 }
