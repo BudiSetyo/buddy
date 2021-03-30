@@ -8,16 +8,40 @@ import Profile from './pages/profile/Index';
 import Dashboard from './pages/dashboard/Index';
 import ActivityUser from './pages/activityUser/Index';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 
 import './App.css';
+
+const isAuthenticated = localStorage.getItem('id') && true;
+
+const MustNotBeloggedIn = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      !isAuthenticated ? <Component {...props} /> : <Redirect to="/dashboard" />
+    }
+  />
+);
+
+const LoginRequired = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      isAuthenticated ? <Component {...props} /> : <Redirect to="/login" />
+    }
+  />
+);
 
 function App() {
   return (
     <Router>
       <Route exact path="/">
-        <Login />
+        <Redirect to="/login" />
       </Route>
+
+      <MustNotBeloggedIn exact path="/login" component={Login} />
+
+      <MustNotBeloggedIn exact path="/register" component={Register} />
 
       <Route path="/register">
         <Register />
@@ -43,9 +67,7 @@ function App() {
         <Profile />
       </Route>
 
-      <Route path="/dashboard">
-        <Dashboard />
-      </Route>
+      <LoginRequired path="/dashboard" component={Dashboard} />
 
       <Route path="/activityUser">
         <ActivityUser />

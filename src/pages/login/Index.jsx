@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Input from '../../components/input/Index';
 import Button from '../../components/button/Index';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Axios from 'axios';
 
@@ -13,8 +13,6 @@ import './Style.css';
 const Index = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
-  const history = useHistory();
 
   const loginHandler = () => {
     Axios.post('http://localhost:8000/auth/login', {
@@ -28,7 +26,7 @@ const Index = () => {
         localStorage.setItem('role', res.data.result.role);
         localStorage.setItem('id', res.data.result.id);
 
-        history.push('/dashboard');
+        window.location = '/dashboard';
       })
       .catch((err) => {
         swal({
